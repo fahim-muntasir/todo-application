@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(120deg, #f1c40f, #f7dc6f);
+}
+
+header > h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+header,
+form {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form > input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background: white;
+}
+
+form > button {
+  padding: 0.5rem;
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form > button:hover {
+  background: #f1c40f;
+}
+
+/* todos style  */
+section {
+  width: 50%;
+  margin: auto;
+}
+
+.todos {
+  list-style: none;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.todo-list > li {
+  background: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.todo-list > .edit-button,
+.delete-button {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.fa-edit,
+.fa-trash-alt {
+  color: #ddd;
+  pointer-events: none;
+}
+
+.edit-button {
+  background: green;
+}
+
+.delete-button {
+  background: red;
+}
+
+.animationDelete {
+  transform: scale(0.5);
+  opacity: 0;
+}
